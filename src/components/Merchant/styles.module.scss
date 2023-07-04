@@ -1,0 +1,108 @@
+@import 'styles/variables';
+
+.merchant {
+  background-color: $color-white;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content_box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100vw;
+  min-height: 120vh;
+}
+
+.merchant_h1 {
+  color: $color-red;
+  text-transform: capitalize;
+  line-height: 140px;
+  font-size: 125px;
+  font-weight: 900;
+}
+
+.description_container {
+  display: flex;
+}
+
+.grid {
+  width: 65vw;
+  display: grid;
+  grid-column-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+}
+
+.box_animation { 
+  background-color: #fdfbf5;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.paragraph{
+  font-size: 30px;
+  color: $color-light-black;
+}
+
+.wrap_slider {
+  position: absolute;
+  width: fit-content;
+  width: 50vw;
+  right:  0;
+}
+
+ .slider_item  {
+  position: relative;
+  height: 50vh;
+  margin: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .button_wrapper {
+  margin-top: 50px;
+ }
+
+ .button {
+  color: $color-light-black;
+  border: 1px solid $color-light-black;
+  
+  &:hover{
+    background-color: $color-gray;
+    border: 1px solid transparent;
+
+  }
+ }
+
+ 
+
+@media screen and (max-width: 650px) {
+  .paragraph{
+    font-size: 15px;
+    color: $color-light-black;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  .wrap_slider {
+    width: 100vw;
+  }
+
+  .merchant_h1 {
+    font-size: 65px;
+    line-height: 85px;
+
+  }
+}

@@ -1,0 +1,78 @@
+@import 'styles/variables';
+
+.directory {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  flex-wrap: wrap-reverse;
+  display: flex;
+}
+
+
+.wrapper_info {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  margin-left: 20px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wrapper_item {
+  width: 100%;
+}
+
+.button_wrapper {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-size: 30px;
+  font-weight: 100;
+  color: $color-white;
+  text-shadow: 1px 1px black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid black;
+
+  &:hover {
+    color: white;
+    background-color: $color-light-black;
+    transform: scale(0.98);
+    transition: .4s ease;
+
+  }
+}
+
+.header_h1 {
+  color: $color-red;
+  text-transform: capitalize;
+  line-height: 70px;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper_info {
+    padding: 10px;
+  }
+
+  .header_h1 {
+    font-size: 65px;
+    line-height: 65px;
+    text-shadow: 2px 2px black;
+  }
+}
