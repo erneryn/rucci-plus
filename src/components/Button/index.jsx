@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import cn from 'classnames'
 const Button = ({name, path, className}) => {
-  console.log(className)
   return (
     <Link href={path} passHref >
       <a target='_blank'>

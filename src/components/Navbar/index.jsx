@@ -22,28 +22,19 @@ const Navbar = () => {
       <ul className={styles.navbar_links}>
         <div className={styles.left_item}>
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"/"}
-              passHref
-            >
+            <Link href={"/"} passHref>
               <a>Home</a>
             </Link>
           </li>
 
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"menu"}
-              passHref
-            >
+            <Link href={"menu"} passHref>
               <a>Menu</a>
             </Link>
           </li>
 
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"#contact"}
-              passHref
-            >
+            <Link href={"/merhants"} passHref>
               <a>Merchants</a>
             </Link>
           </li>
@@ -63,44 +54,35 @@ const Navbar = () => {
         </li>
         <div className={styles.right_item}>
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"#contact"}
-              passHref
-            >
+            <Link href={"#contact"} passHref>
               <a>About</a>
             </Link>
           </li>
 
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"#contact"}
-              passHref
-            >
+            <Link href={"#contact"} passHref>
               <a>Promo</a>
             </Link>
           </li>
 
           <li className={cn(styles.menu_item)}>
-            <Link
-              href={"#contact"}
-              passHref
-            >
+            <Link href={"#contact"} passHref>
               <a>Blog</a>
             </Link>
           </li>
         </div>
       </ul>
       <div className={styles.navbar_smallscreen}>
-          <Link href="/#home" passHref>
-            <div className={styles.navbar_logo}>
-              <Image
-                src={images?.logorucci}
-                layout="fill"
-                objectFit="cover"
-                alt="logo"
-              />
-            </div>
-          </Link>
+        <Link href="/#home" passHref>
+          <div className={styles.navbar_logo}>
+            <Image
+              src={images?.logorucci}
+              layout="fill"
+              objectFit="cover"
+              alt="logo"
+            />
+          </div>
+        </Link>
         <GiHamburgerMenu
           className={styles.navbar_hamburger}
           onClick={handleToggle}
@@ -118,7 +100,28 @@ const Navbar = () => {
               onClick={handleToggle}
             />
             <ul className={styles.navbar_smallscreen_links}>
-              
+              <li className={cn(styles.menu_item)}>
+                <Link href={"/"} passHref>
+                  <a>Home</a>
+                </Link>
+              </li>
+
+              <li className={cn(styles.menu_item)}>
+                <Link href={"menu"} passHref>
+                  <a>Menu</a>
+                </Link>
+              </li>
+
+              <li className={cn(styles.menu_item)}>
+                <Link href={"/merhants"} passHref>
+                  <a>Merchants</a>
+                </Link>
+              </li>
+              <li className={cn(styles.menu_item)}>
+                <Link href={"#contact"} passHref>
+                  <a>Blog</a>
+                </Link>
+              </li>
             </ul>
           </div>
         )}

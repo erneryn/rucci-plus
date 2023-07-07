@@ -3,6 +3,7 @@ import Link from 'next/link';
 import cn from 'classnames';
 import styles from './styles.module.scss';
 import Button from 'components/Button';
+import Merchant from 'components/Merchant';
 
 const Menu = ({ info }) => {
   

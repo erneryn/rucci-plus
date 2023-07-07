@@ -27,6 +27,7 @@ export async function getDataFromBucket(type) {
     .props(['title,slug,metadata,created_at'])
     return data.objects
   } catch (error) {
+    return null
   }
   
 }
