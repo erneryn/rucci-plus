@@ -6,7 +6,8 @@ import Button from 'components/Button';
 import Merchant from 'components/Merchant';
 
 const Menu = ({ info }) => {
-  
+  const PATH_QR = process.env.QR_CODE ||'https://qrco.de/be6Lm5' 
+
   return (
     <div className={cn(styles.menu)}>
       <div className={styles.image_container}>
@@ -23,7 +24,7 @@ const Menu = ({ info }) => {
         <h1 className={styles.title}>Menu</h1>
         <p className={styles.content}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ratione aut eos a explicabo et ducimus recusandae itaque rerum ut? Nihil ducimus illo maxime impedit fuga? Ab provident eaque fuga.</p>
         <div className={cn(styles.menu_wrapper,"flex_center")}>
-          <Button name={"Open Menu"} path={process.env.QR_CODE}/>
+          <Button name={"Open Menu"} path={PATH_QR}/>
 
         </div>
       </div>
