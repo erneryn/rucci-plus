@@ -15,11 +15,15 @@
     .content_wrapper {
         .right_content {
             font-weight: 100;
+            font-size: 25px;
+        }
+
+        .left_content {
+            font-size: 25px;
         }
     }
        
 }
-
 
 .directory {
 
@@ -36,7 +40,7 @@
 .title {
     color: $color-red;
     text-transform: capitalize;
-    font-size: 67px;
+    font-size: 80px;
     font-weight: 900;
     background-color: #03031c;
 }
@@ -50,6 +54,7 @@
 
 
 .content_wrapper {
+    margin-top: 40px;
     width: 60%;
     grid-row-gap: 16px;
     grid-column-gap: 76px;
@@ -95,5 +100,26 @@
 
     .content_wrapper {
         width: 100%;
+        grid-column-gap: 10px;
+        padding: 10px;
+    }
+
+    .features {
+        .content_wrapper {
+            .right_content {
+                font-weight: 100;
+                font-size: 20px;
+            }
+    
+            .left_content {
+                font-size: 20px;
+            }
+        }
+    }
+
+  
+
+    .title {
+        font-size: 45px;
     }
 }

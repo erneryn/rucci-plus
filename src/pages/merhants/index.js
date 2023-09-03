@@ -5,7 +5,6 @@ import { getDataFromBucket } from 'lib/api';
 import Tenant from 'components/Tenant';
 
 const Merchant = ({ data }) => { 
-  console.log(data)
   return (
     <>
        <Head>
@@ -26,7 +25,7 @@ const Merchant = ({ data }) => {
 
 export async function getStaticProps() {
   let data = []
-  data = await getDataFromBucket('tenants')
+  data = await getDataFromBucket('merchants')
   
 
   return {

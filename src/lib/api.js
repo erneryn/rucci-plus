@@ -20,6 +20,7 @@ export async function getAllDataWithSlug() {
 }
 
 export async function getDataFromBucket(type) {
+  console.log(type)
   try {
     const data = await bucket.objects.find({
       type

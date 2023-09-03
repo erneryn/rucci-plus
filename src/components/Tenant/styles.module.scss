@@ -15,6 +15,21 @@
     height: 40vh;
 }
 
+.logo_tenant {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+}
+
+.description {
+  font-size: 25px;
+  color: $color-light-black;
+  background-color: #f6f6f6;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 .content_wrapper {
     margin-top: 50px;
     padding-left: 6rem;
@@ -69,6 +84,11 @@
   color: $color-light-black;
 }
 
+.opening_hours {
+  color: $color-light-black;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 650px) {
     .content_wrapper {
         margin-top: 20px;
@@ -78,12 +98,16 @@
 
     .tenant_wrapper {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr ;
     }
 
     .tenant_title {
       margin-bottom: 10px;
       font-size: 40px;
+    }
+    
+    .tenant_image {
+      height: 50vh;
     }
 
 }

@@ -21,7 +21,7 @@
 }
 
 .wrapper_item {
-  width: 50%;
+  width: 80%;
 }
 
 .bg_image {
@@ -42,9 +42,15 @@
 .header_h1 {
   color: $color-red;
   text-transform: capitalize;
-  line-height: 140px;
-  font-size: 125px;
+  line-height: 100px;
+  font-size: 105px;
   font-weight: 900;
+}
+
+.subtitle {
+  color: $color-white;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .tester{
@@ -81,6 +87,14 @@
    line-height: 60px;
    width: 100vw;
   }
+
+
+.subtitle {
+  color: $color-white;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 
   .wrapper_info {
     padding: 20px;

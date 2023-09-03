@@ -40,7 +40,7 @@ const Home = ({ info }) => {
     children: (
       <div className={cn(styles.wrapper_info)}>
         <div className={styles.wrapper_item}>
-          <SubHeading title={info?.metadata?.subtitle} />
+          <p  className={styles.subtitle}>{info?.metadata?.subtitle}</p>
           <h1 className={styles.header_h1}>{info?.metadata?.title}</h1>
         </div>
       </div>

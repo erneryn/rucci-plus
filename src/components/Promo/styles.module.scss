@@ -1,0 +1,50 @@
+@import 'styles/variables';
+
+.menu {
+    width: 100%;
+    background-color: #03031c;
+    position: relative;
+}
+
+.image_container {
+    z-index: 10;
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+}
+
+.content_wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    color: $color-red;
+    text-transform: capitalize;
+    font-size: 67px;
+    font-weight: 900;
+    background-color: #03031c;
+}
+
+.item_container {
+    margin-top: 30px;
+}
+
+.item_images {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.content {
+    text-align: center;
+    font-size: 21px;
+    color: $color-white;
+    font-weight: 100;
+}
+
+.menu_wrapper {
+    margin: 20px;
+}

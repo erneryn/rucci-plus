@@ -5,6 +5,8 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+  background-image: radial-gradient(#d3d3d3 20%, #f6f6f6 20%);
+  background-size: 10px 10px;
 }
 
 .content_box {
@@ -47,6 +49,7 @@
   bottom: 0;
 }
 
+
 .paragraph{
   font-size: 30px;
   color: $color-light-black;
@@ -59,10 +62,11 @@
   right:  0;
 }
 
+
  .slider_item  {
   position: relative;
-  height: 50vh;
-  margin: 10px;
+  height: 70vh;
+  margin-right: 10px;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -97,7 +101,14 @@
   }
 
   .wrap_slider {
+    margin-top: 10px;
     width: 100vw;
+    position: relative;
+    margin-left: -5rem;
+  }
+
+  .slider_item{
+    height: 50vh;
   }
 
   .merchant_h1 {
@@ -105,7 +116,9 @@
     line-height: 85px;
   }
 
+
+
   .content_box {
-    min-height: 140vh;
+    min-height: 100vh;
   }
 }
